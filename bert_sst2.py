@@ -28,7 +28,7 @@ logging.set_verbosity_error()
 colors = ['blue', 'cyan', 'green', 'indigo', 'magenta', 'red', 'darkorange', 'yellow']
 accs, recs, precs, f1s = [], [], [], [] #储存指标
 fprs, tprs, roc_aucs =[], [], []
-savepath = r"/home/xiazhiduo/pytorch/bert-sst2/xzd/ROC/"
+savepath = r"/home/xxx/pytorch/bert-sst2/xxx/ROC/"    # 图像存储路径
 epochs = []
 threshold = 0.5 # 分类阈值
 #graphic
@@ -37,8 +37,8 @@ threshold = 0.5 # 分类阈值
 gpu_num = "2"
 batch_size = 16
 num_epoch = 4  # 训练轮次
-train_path = "/home/xiazhiduo/pytorch/bert-sst2/train.tsv"  # 数据所在地址
-test_path = "/home/xiazhiduo/pytorch/bert-sst2/dev.tsv"
+train_path = "/home/xxx/pytorch/bert-sst2/train.tsv"  # 数据所在地址
+test_path = "/home/xxx/pytorch/bert-sst2/dev.tsv"
 learning_rate = 2e-5  # 优化器的学习率
 device = torch.device(("cuda:" + gpu_num) if torch.cuda.is_available() else "cpu")
 pretrained_model_name = 'bert-base-uncased'
